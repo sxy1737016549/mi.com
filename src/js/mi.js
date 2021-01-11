@@ -1,6 +1,6 @@
-// import './library/jquery';
-// import'./library/jquery.lazyload';
-// import'./library/jquery-1.11.0.min';
+import './library/jquery.js';
+import'./library/jquery-1.11.0.min.js';
+import'./library/jquery.lazyload.js';
 
 
 $(function () {
