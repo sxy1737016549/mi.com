@@ -1,0 +1,422 @@
+@charset'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+}
+body{
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+}
+i{
+    font-style: normal;
+}
+.topbar-banner-Wrapper{
+    height: 120px;
+    width: 100%;
+}
+.topbar-banner-Wrapper a{
+    background: url(../img/header.jpg) no-repeat;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: auto 120px;
+}
+.site-topbar{
+    position: relative;
+    z-index: 30;
+    height: 40px;
+    font-size: 12px;
+    color: #b0b0b0;
+    background: #333;
+}
+.container{
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+}
+.topbar-nav{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+.topbar-nav a{
+    color: #b0b0b0;
+    line-height: 40px;
+    display: inline-block;
+}
+.topbar-nav a:hover{
+    color: #fff;
+}
+.topbar-nav span{
+    margin: 0 .3em;
+    color: #424242;
+}
+.topbar-cart{
+    position: relative;
+    float: right;
+    width: 120px;
+    height: 40px;
+    margin-left: 15px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    font-size: 12px;
+}
+.topbar-info{
+    position: relative;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+.appcode{
+    position: absolute;
+    top: 40px;
+    left: -30px;
+    width: 124px;
+    height: 0;
+    background: #fff;
+    margin-left: -55px;
+    -webkit-box-shadow: #aaa 0 1px 5px;
+    box-shadow: 0 1px 5px #aaa;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    line-height: 1;
+    overflow: hidden;
+    -webkit-transition: height .3s;
+    transition: height .3s;
+}
+.appcode img{
+    display: block;
+    margin: 18px auto 12px;
+    border: 0;
+    width: 90px;
+    height: 90px;
+}
+.topbar-download:hover .appcode{
+    height: 148px;
+}
+.topbar-download:hover em{
+    display: block;
+}
+.topbar-download{
+    position: relative;
+}
+.glyphicon-triangle-top{
+    position: absolute;
+    top: 31px;
+    left: 20px;
+    display: none;
+}
+.cart-mini{
+    position: relative;
+    z-index: 32;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #b0b0b0;
+    background: #424242;
+}
+.glyphicon-shopping-cart{
+    margin-right: 4px;
+    font-size: 20px;
+    line-height: 20px;
+    vertical-align: -4px;
+    font-size: 20px;
+}
+.cart-mini:hover{
+    background-color: #fff;
+    color: #ff6700;
+}
+.cart-menu{
+    position: absolute;
+    right: 0;
+    height: 0px;
+    top: 40px;
+    z-index: 31;
+    width: 316px;
+    height: 0;
+    color: #424242;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.15);
+    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+    overflow: hidden;
+    -webkit-transition: height .3s;
+    transition: height .3s;
+}
+.topbar-cart:hover .cart-menu{
+    height: 100px;
+}
+.link{
+    padding: 0 5px;
+    text-align: center;
+    color: #b0b0b0;
+    line-height: 40px;
+    display: inline-block;
+}
+.link1{
+    padding: 0 10px;
+}
+.link:hover{
+    color:#b0b0b0 ;
+}
+.topbar-info .sep{
+    color: #424242;
+    margin: 0;
+    float: left;
+}
+.site-header{
+    position: relative;
+    z-index: 20;
+    height: 100px;
+}
+.header-logo{
+    float: left;
+    width: 62px;
+    margin-top: 22px;
+}
+.header-logo .logo{
+    position: relative;
+    display: block;
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    background-color: #ff6700;
+}
+.header-logo .logo:before{
+    background: url(../img/mi-logo.png) no-repeat 50% 50%;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 55px;
+    height: 55px;
+    content: "";
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.header-logo .logo::after{
+    background: url(../img/mi-home.png) no-repeat 50% 50% ;
+    opacity: 0;
+    margin-left: -55px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 55px;
+    height: 55px;
+    content: "";
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.header-logo .logo:hover::before{
+    -webkit-transform: translate3d(55px,0,0);
+    transform: translate3d(55px,0,0);
+    opacity: 0;
+}
+.header-logo .logo:hover::after{
+    -webkit-transform: translate3d(55px,0,0);
+    transform: translate3d(55px,0,0);
+    opacity: 1;
+}
+.header-nav{
+    float: left;
+    width: 850px;
+    box-sizing: content-box;
+}
+.nav-list{
+    position: relative;
+    z-index: 10;
+    float: left;
+    width: 1100px;
+    height: 88px;
+    margin: 0;
+    padding: 12px 0 0 30px;
+    list-style-type: none;
+    font-size: 16px;
+    
+}
+.nav-list::before{
+    content: " ";
+    display: table;
+}
+.nav-list::after{
+    content: " ";
+    display: table;
+    clear: both;
+    box-sizing: content-box !important;
+}
+.nav-category{
+    position: relative;
+    float: left;
+    width: 127px;
+    padding-right: 15px;
+    box-sizing: content-box;
+}
+.link-category{
+    display: block;
+    padding: 26px 0 38px;
+    text-align: right;
+    color: #333;
+    visibility: hidden;
+}
+.site-category{
+    display: none;
+    position: absolute;
+    top: 88px;
+    left: -92px;
+    z-index: 21;
+    width: 234px;
+    height: 460px;
+    font-size: 14px;
+}
+.site-category-list.site-category-list-custom{
+    height: 420px;
+    border: 0;
+    color: #fff;
+    background: rgba(105,101,101,.6);
+    box-sizing: content-box;
+}
+.site-category-list{
+    height: 418px;
+    margin: 0;
+    padding: 20px 0;
+    list-style-type: none;
+    border: 1px solid #ff6700;
+    color: #424242;
+    background: #fff;
+}
+
+.site-category-list::before{
+    content: " ";
+    display: table;
+}
+.site-category-list::after{
+    content: " ";
+    display: table;
+    clear: both;
+
+}
+.nav-list .title{
+    position: relative;
+    display: block;
+    padding-left: 30px;
+    height: 42px;
+    line-height: 42px;
+    color: #424242;
+    color: #fff;
+}
+.nav-list .title:hover{
+    background-color: #ff6700;
+    color: #fff;
+}
+.glyphicon-menu-right{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #e0e0e0;
+}
+.nav-item{
+    float: left;
+}
+.nav-item .link{
+    display: block;
+    padding: 26px 10px 38px;
+    color: #333;
+    line-height: 24px;
+}
+.nav-item .link:hover{
+    color: #ff6700;
+}
+.header-search{
+    float: right;
+    width: 296px;
+    margin-top: 25px;
+}
+.header-search .search-form{
+    position: relative;
+    width: 296px;
+    height: 50px;
+    z-index: 20;
+}
+.clearfix:after, .clearfix:before {
+    content: " ";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.search-form:hover .search-text,.search-form:hover .search-btn{
+    border-color: #b0b0b0;
+}
+.search-form .search-text:focus{
+    border-color: #ff6700;
+}
+.search-form:focus .search-btn{
+    border-color: #ff6700 !important;
+}
+.hide{
+    display: none!important;
+}
+.search-text{
+    right: 51px;
+    z-index: 1;
+    width: 223px;
+    height: 48px;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 48px;
+    box-sizing: content-box !important;
+    outline: 0;
+}
+.site-header .search-btn, .site-header .search-text {
+    position: absolute;
+    top: 0;
+    border: 1px solid #e0e0e0;
+    outline: 0;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+.site-header .search-btn {
+    right: 0;
+    z-index: 2;
+    width: 52px;
+    height: 50px;
+    font-size: 24px;
+    line-height: 24px;
+    background: #fff;
+    color: #616161;
+    outline: 0;
+}
+.search-btn:hover{
+    background-color: #ff6700;
+    color: #fff;
+}
+.glyphicon-search{
+    font-size: 18px !important;
+}
+
