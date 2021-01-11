@@ -14,13 +14,13 @@ $(function () {
                 index = 0;
             }
             sliderIndex(index)
-        }, 2000)
+        }, 3000)
     }
     sliderTimer()
     // 根据索引值点亮小圆点并显示对应图片
     function sliderIndex(index) {
         // 对应图片显示
-        $('.slider li').eq(index).fadeIn(800).siblings().fadeOut(800);
+        $('.slider li').eq(index).fadeIn(2000).siblings().fadeOut(2000);
         // 小圆点点亮
         $('.tab span').eq(index).addClass('show').siblings().removeClass('show')
     }
