@@ -374,8 +374,8 @@ i {
 .search-form .search-text:focus {
   border-color: #ff6700;
 }
-.search-form:focus .search-btn {
-  border-color: #ff6700 !important;
+.search-form .search-text:focus + button {
+  border-color: #ff6700;
 }
 .hide {
   display: none!important;

@@ -144,6 +144,9 @@ i {
   background: url(../img/wx@2x.png) 50% 0 no-repeat;
   background-size: cover;
 }
+.site-footer .footer-links .col-contact .follow .wx:hover + img {
+  display: block;
+}
 .site-footer .footer-links .col-contact .follow img {
   width: 126px;
   height: 126px;

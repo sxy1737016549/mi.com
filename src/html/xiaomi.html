@@ -60,9 +60,9 @@
                     </div>
                 </div>
                 <div class="topbar-info">
-                    <a href="" class="link">登录</a>
+                    <a href="./login.html" class="link">登录</a>
                     <span class="sep">|</span>
-                    <a href="" class="link">注册</a>
+                    <a href="./enter.html" class="link">注册</a>
                     <span class="sep">|</span>
                     <a href="" class="link link1">消息通知</a>
                 </div>
@@ -177,9 +177,9 @@
                 <div class="header-search">
                     <form action="" class="search-form clearfix">
                         <label for="" class="hide">站内搜索</label>
-                        <a class="no-style-msq"><input type="search" class="search-text" placeholder="洗衣机"></a>
-                        <a class="no-style-msq"><button type="submit" class="search-btn glyphicon glyphicon-search"  ></button>>
-                        </a>
+                        <input type="search" class="search-text" placeholder="洗衣机">
+                        <button type="submit" class="search-btn glyphicon glyphicon-search"></button>
+                        
                     </form>
                 </div>
             </div>
@@ -517,8 +517,8 @@
                             </div>
                         </div>
                         <div class="span16">
-                            <ul class="brick-list clearfix">
-                                <li class="brick-item brick-item-m-2">
+                            <ul class="brick-list clearfix p-list">
+                                <!-- <li class="brick-item brick-item-m-2">
                                     <a href="">
                                         <div class="figure figure-img">
                                             <img data-original="../img/span16-1.webp" alt="" class="lazy">
@@ -527,8 +527,8 @@
                                         <p class="desc">骁龙888 | 2K四曲面屏</p>
                                         <p class="price">3999元起</p>
                                     </a>
-                                </li>
-                                <li class="brick-item brick-item-m-2">
+                                </li> -->
+                                <!-- <li class="brick-item brick-item-m-2">
                                     <a href="">
                                         <div class="figure figure-img">
                                             <img data-original="../img/span16-2.webp" alt="" class="lazy">
@@ -597,8 +597,7 @@
                                         <p class="desc">骁龙888 | 2K四曲面屏</p>
                                         <p class="price">3999元起</p>
                                     </a>
-                                </li>
-
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -2348,7 +2347,7 @@
                             关注小米：
                             <a href="" class="wb"></a>
                             <a href="" class="wx"></a>
-                            <img data-original="../img/wx-img.png" alt="" class="lazy">
+                            <img src="https://cdn.cnbj1.fds.api.mi-img.com/staticsfile/global/wx-img.png" alt="" >
                         </div>
                     </div>
                 </div>
@@ -2441,67 +2440,5 @@
         </div>
     </div>
 </body>
-<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script> -->
-<!-- <script src="../js/library/jquery.js"></script>
-<script src="../js/library/jquery-1.11.0.min.js"></script>
-<script src="../js/library/jquery.lazyload.js"></script>
-<script>
-    $(function () {
-    var index = 0;
-    var timer = null;
-    // 定时器自动播放
-    function sliderTimer() {
-        timer = setInterval(function () {
-            index++;
-            if (index == $('.slider li').length) {
-                index = 0;
-            }
-            sliderIndex(index)
-        }, 2000)
-    }
-    sliderTimer()
-    // 根据索引值点亮小圆点并显示对应图片
-    function sliderIndex(index) {
-        // 对应图片显示
-        $('.slider li').eq(index).fadeIn(800).siblings().fadeOut(800);
-        // 小圆点点亮
-        $('.tab span').eq(index).addClass('show').siblings().removeClass('show')
-    }
-    // 小圆点点击事件
-    $('.tab span').click(function () {
-        clearInterval(timer)
-        index = $(this).index()
-        sliderIndex(index)
-    })
-    // 左侧按钮点击事件
-    $('.arrow_left').click(function () {
-        index--;
-        if (index == -1) {
-            index = $('.slider li').length - 1;
-        }
-        sliderIndex(index)
-    })
-    // 右侧按钮点击事件
-    $('.arrow_right').click(function () {
-        index++;
-        if (index == $('.slider li').length) {
-            index = 0;
-        }
-        sliderIndex(index)
-    })
-    // 鼠标移入轮播区域关闭定时器
-    $('.slider').mouseenter(function () {
-        clearInterval(timer);
-    })
-    // 鼠标移出轮播区域开启定时器
-    $('.slider').mouseleave(function () {
-        sliderTimer();
-    })
-});
-    $(function() {
-      $("img.lazy").lazyload({effect: "fadeIn"});
-    });
 
-</script> -->
 </html>

@@ -1,6 +1,8 @@
 import './library/jquery.js';
-import'./library/jquery-1.11.0.min.js';
-import'./library/jquery.lazyload.js';
+import './library/jquery-1.11.0.min.js';
+import './library/jquery.lazyload.js';
+
+// import './index.js'
 
 
 $(function () {
@@ -56,6 +58,32 @@ $(function () {
     })
 });
 
-$(function() {
-    $("img.lazy").lazyload({effect: "fadeIn"});
+$(function () {
+    $("img.lazy").lazyload({ effect: "fadeIn" });
+});
+
+
+$.ajax({
+    type: "get",
+    url: "../../interface/getDate.php",
+    dataType: "json",
+    success: function (res) {
+        let temp = '';
+        res.forEach((elm, i) => {
+            let picture = JSON.parse(elm.picture);
+            // console.log(picture);
+            temp += `<li class="brick-item brick-item-m-2">
+            <a href="">
+                <div class="figure figure-img">
+                    <img src="../${picture[0].src}" alt="" class="lazy">
+                </div>
+                <h3 class="title">${elm.title}</h3>
+                <p class="desc">${elm.details}</p>
+                <p class="price">${elm.price}元起</p>
+            </a>
+        </li>`;
+        });
+
+        $('.p-list').append(temp);
+    }
 });

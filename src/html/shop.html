@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/shop.css">
+    <script src="../js/shop.js" type="module"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="site-topbar">
+            <div class="container">
+                <div class="topbar-nav">
+                    <a href="">小米商城</a>
+                    <span>|</span>
+                    <a href="">MIUI</a>
+                    <span>|</span>
+                    <a href="">IoT</a>
+                    <span>|</span>
+                    <a href="">云服务</a>
+                    <span>|</span>
+                    <a href="">天星数科</a>
+                    <span>|</span>
+                    <a href="">有品</a>
+                    <span>|</span>
+                    <a href="">小爱开放平台</a>
+                    <span>|</span>
+                    <a href="">企业团购</a>
+                    <span>|</span>
+                    <a href="">资质证照</a>
+                    <span>|</span>
+                    <a href="">协议规则</a>
+                    <span>|</span>
+                    <a href="" class="topbar-download">下载app
+                        <em class="glyphicon glyphicon-triangle-top"></em>
+                        <span class="appcode"><img src="https://i1.mifile.cn/f/i/17/appdownload/download.png?1" alt="" class="lazy">小米商城APP
+                        </span>
+                    </a>
+                    <span>|</span>
+                    <a href="">智能生活</a>
+                    <span>|</span>
+                    <a href="">Select Location</a>
+                </div>
+                <div class="topbar-cart">
+                    <a href="" class="cart-mini">
+                        <em class="glyphicon glyphicon-shopping-cart"></em>
+                        <em class="iconfont-cart-full hide"></em>
+                        购物车
+                        <span>(0)</span>
+                    </a>
+                    <div class="cart-menu">
+
+                    </div>
+                </div>
+                <div class="topbar-info">
+                    <a href="./login.html" class="link">登录</a>
+                    <span class="sep">|</span>
+                    <a href="./enter.html" class="link">注册</a>
+                    <span class="sep">|</span>
+                    <a href="" class="link link1">消息通知</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="site-header">
+            <div class="container">
+                <div class="header-logo">
+                    <a href="" class="logo ir"></a>
+                </div>
+                <div class="header-nav">
+                    <ul class="nav-list">
+                        <li class="nav-category">
+                            <a href="" class="link-category">
+                                <span class="text">全部商品分类</span>
+                            </a>
+                            <!-- <div class="site-category" style="display: block;">
+                                <ul class="site-category-list clearfix site-category-list-custom">
+                                    <li class="category-item">
+                                        <a href="" class="title">手机 电话卡
+                                            <em class="
+                                            glyphicon glyphicon-menu-right"></em>
+                                        </a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="title">电视 盒子
+                                            <em class="
+                                            glyphicon glyphicon-menu-right"></em>
+                                        </a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="title">笔记本 显示器
+                                            <em class="
+                                            glyphicon glyphicon-menu-right"></em>
+                                        </a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="title">家电 插线板
+                                            <em class="
+                                            glyphicon glyphicon-menu-right"></em>
+                                        </a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="title">出行 穿戴
+                                            <em class="
+                                            glyphicon glyphicon-menu-right"></em>
+                                        </a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="title">智能 路由器
+                                            <em class="
+                                            glyphicon glyphicon-menu-right"></em>
+                                        </a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="title">电源 配件
+                                            <em class="
+                                            glyphicon glyphicon-menu-right"></em>
+                                        </a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="title">健康 儿童
+                                            <em class="
+                                            glyphicon glyphicon-menu-right"></em>
+                                        </a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="title">耳机 音箱
+                                            <em class="
+                                            glyphicon glyphicon-menu-right"></em>
+                                        </a>
+                                    </li>
+                                    <li class="category-item">
+                                        <a href="" class="title">生活 箱包
+                                            <em class="
+                                            glyphicon glyphicon-menu-right"></em>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="link"><span class="item-children">小米手机</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="link"><span class="item-children">Redmi 红米</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="link"><span class="item-children">电视</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="link"><span class="item-children">笔记本</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="link"><span class="item-children">家电</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="link"><span class="item-children">路由器</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="link"><span class="item-children">智能硬件</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="link"><span class="item-children">服务</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="link"><span class="item-children">社区</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-search">
+                    <form action="" class="search-form clearfix">
+                        <label for="" class="hide">站内搜索</label>
+                        <a class="no-style-msq"><input type="search" class="search-text" placeholder="洗衣机"></a>
+                        <a class="no-style-msq"><button type="submit"
+                                class="search-btn glyphicon glyphicon-search"></button>>
+                        </a>
+                    </form>
+                </div>
+            </div>
+            <div class="header-nav-menu"></div>
+        </div>
+        <div>
+            <div class="xm-product-box">
+                <div class="nav-bar">
+                    <div class="container">
+                        <h2>Note 9 5G</h2>
+                        <div class="con">
+                            <div class="left">
+                                <span class="separator">|</span>
+                                <a href="">Redmi Note 9 Pro 5G</a>
+                                <span class="separator">|</span>
+                                <a href="">Redmi Note 9 4G</a>
+                            </div>
+                            <div class="right">
+                                <a href="">概述页</a>
+                                <span class="separator">|</span>
+                                <a href="">参数页</a>
+                                <span class="separator">|</span>
+                                <a href="">F码通道</a>
+                                <span class="separator">|</span>
+                                <a href="">咨询客服</a>
+                                <span class="separator">|</span>
+                                <a href="">用户评价</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xm-product-box nav-bar-hidden J_nav_hide">
+                <div class="nav-bar">
+                    <div class="container">
+                        <h2>Note 9 5G</h2>
+                        <div class="con">
+                            <div class="left">
+                                <span class="separator">|</span>
+                                <a href="">Redmi Note 9 Pro 5G</a>
+                                <span class="separator">|</span>
+                                <a href="">Redmi Note 9 4G</a>
+                            </div>
+                            <div class="right">
+                                <a href="">概述页</a>
+                                <span class="separator">|</span>
+                                <a href="">参数页</a>
+                                <span class="separator">|</span>
+                                <a href="">F码通道</a>
+                                <span class="separator">|</span>
+                                <a href="">咨询客服</a>
+                                <span class="separator">|</span>
+                                <a href="">用户评价</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="page">
+            <div class="page-box">
+                <div class="page-info">
+                    <div class="product-box container">
+                        <div class="img-left">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" ><img src="../img/123456-1.jpg" alt=""></div>
+                                    <div class="swiper-slide hide" >
+                                        <img src="../img/123456-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next swiper-button-white"></div>
+                                <div class="swiper-button-prev swiper-button-white"></div>
+                            </div>
+                        </div>
+                        <div class="product-con">
+                            <h2>小米11</h2>
+                            <p class="sale-desc">
+                                <font color="#ff4a00">「新品热卖中！最高享6期免息；购机返双倍米金；标配不提供充电器和数据线，如需请选择套装版」</font>
+                                骁龙888｜2K AMOLED 四曲面柔性屏｜1亿像素三摄｜时尚轻薄机身｜55W 有线闪充｜50W 无线闪充｜10W 无线反充｜LPDDR5｜WiFi6（增强版）｜视频「超级夜景」｜哈曼卡顿音频认证｜立体声双扬声器
+                            </p>
+                            <p class="company-info">小米自营</p>
+                            <div class="price-info">
+                                <span>3999 元</span>
+                            </div>
+                            <div class="line">
+
+                            </div>
+                            <div class="address-box">
+                                <div class="product-address">
+                                    <i class="glyphicon glyphicon-map-marker"></i>
+                                    <p>
+                                        <span>北京</span>
+                                        <span>北京市</span>
+                                        <span>海淀区</span>
+                                        <span>清河街道</span>
+                                        <a href="">修改</a>
+                                    </p>
+                                    <div class="desc">
+                                        该地区暂时缺货
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buy">
+                                <div class="buy-box-child">
+                                    <p class="title">选择版本</p>
+                                    <div class="clearfix">
+                                        <div class="active">
+                                            <a href="">8GB+128GB</a>
+                                        </div>
+                                        <div>
+                                            <a href="">8GB+256GB</a>
+                                        </div>
+                                        <div><a href="">12GB+256GB</a></div>
+                                        </div>
+                                </div>
+                                <div class="buy-box-child">
+                                    <p class="title">选择颜色</p>
+                                    <div class="clearfix">
+                                        <div class="active">
+                                            <a href="">黑色</a>
+                                        </div>
+                                        <div>
+                                            <a href="">蓝色</a>
+                                        </div>
+                                        <div><a href="">白色</a></div>
+                                        <div><a href="">烟紫（素皮）</a></div>
+                                    </div>
+                                </div>
+                                <div class="batch-box">
+                                    <p class="title">选择套装</p>
+                                    <div class="clearfix">
+                                        <div class="active">
+                                            <a href="">标准版</a>
+                                        </div>
+                                        <div>
+                                            <a href="">套装版（赠充电器）</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-box">
+                                <div class="service-item-box">
+                                    <p class="title">
+                                        选择小米提供的尊享服务
+                                        <a href="">了解尊享服务 ></a>
+                                    </p>
+                                    <ul>
+                                        <li class="">
+                                            <i class="icon-checkbox">
+                                                <em>√</em>
+                                            </i>
+                                            <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1608263434.1526595.png" alt="">
+                                            <div class="box">
+                                                <h3>MiCare保障服务
+                                                    <span>679元</span>
+                                                </h3>
+                                                <p class="desc">2年2次碎屏 1年延保维修 1年保值换新</p>
+                                                <div class="agreement-box">
+                                                    <i class="icon-checkbox">
+                                                        <em>√</em>
+                                                    </i>
+                                                    我已阅读
+                                                    <a href="">
+                                                        服务条款
+                                                        <span>|</span>
+                                                    </a>
+                                                    <a href="">常见问题</a>
+                                                </div>
+                                                <div class="price">
+                                                    679元
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="service-item-box">
+                                    <p class="title">
+                                        选择小米提供的意外保护
+                                        <a href="">了解意外保护 ></a>
+                                    </p>
+                                    <ul>
+                                        <li class="">
+                                            <i class="icon-checkbox">
+                                                <em>√</em>
+                                            </i>
+                                            <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1608263434.1526595.png" alt="">
+                                            <div class="box">
+                                                <h3>意外保障服务
+                                                    <span>349元</span>
+                                                </h3>
+                                                <p class="desc">手机意外碎屏/进水/碾压等损坏</p>
+                                                <div class="agreement-box">
+                                                    <i class="icon-checkbox">
+                                                        <em>√</em>
+                                                    </i>
+                                                    我已阅读
+                                                    <a href="">
+                                                        服务条款
+                                                        <span>|</span>
+                                                    </a>
+                                                    <a href="">常见问题</a>
+                                                </div>
+                                                <div class="price">
+                                                    349元
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <i class="icon-checkbox">
+                                                <em>√</em>
+                                            </i>
+                                            <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1608263434.1526595.png" alt="">
+                                            <div class="box">
+                                                <h3>碎屏保障服务
+                                                    <span>249元</span>
+                                                </h3>
+                                                <p class="desc">手机意外碎屏</p>
+                                                <div class="agreement-box">
+                                                    <i class="icon-checkbox">
+                                                        <em>√</em>
+                                                    </i>
+                                                    我已阅读
+                                                    <a href="">
+                                                        服务条款
+                                                        <span>|</span>
+                                                    </a>
+                                                    <a href="">常见问题</a>
+                                                </div>
+                                                <div class="price">
+                                                    249元
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="service-item-box">
+                                    <p class="title">
+                                        选择小米提供的延长保修
+                                        <a href="">了解延长保修 ></a>
+                                    </p>
+                                    <ul>
+                                        <li class="">
+                                            <i class="icon-checkbox">
+                                                <em>√</em>
+                                            </i>
+                                            <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1608263434.1526595.png" alt="">
+                                            <div class="box">
+                                                <h3>延长保修服务
+                                                    <span>159元</span>
+                                                </h3>
+                                                <p class="desc">厂保延一年，性能故障免费维修</p>
+                                                <div class="agreement-box">
+                                                    <i class="icon-checkbox">
+                                                        <em>√</em>
+                                                    </i>
+                                                    我已阅读
+                                                    <a href="">
+                                                        服务条款
+                                                        <span>|</span>
+                                                    </a>
+                                                    <a href="">常见问题</a>
+                                                </div>
+                                                <div class="price">
+                                                    159元
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="service-item-box">
+                                    <p class="title">
+                                        选择小米提供的云空间服务
+                                        <a href="">了解云空间服务 > ></a>
+                                    </p>
+                                    <ul>
+                                        <li class="">
+                                            <i class="icon-checkbox">
+                                                <em>√</em>
+                                            </i>
+                                            <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1600176481.06844959.png" alt="">
+                                            <div class="box">
+                                                <h3>云空间年卡200G
+                                                    <span>159元</span>
+                                                </h3>
+                                                <p class="desc">主商品签收后，自动激活至下单帐号</p>
+                                                <div class="agreement-box">
+                                                    <i class="icon-checkbox">
+                                                        <em>√</em>
+                                                    </i>
+                                                    我已阅读
+                                                    <a href="">
+                                                        注意事项
+                                                        <span>|</span>
+                                                    </a>
+                                                    <a href="">常见问题</a>
+                                                </div>
+                                                <div class="price">
+                                                    159元
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <i class="icon-checkbox">
+                                                <em>√</em>
+                                            </i>
+                                            <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1600176481.06844959.png" alt="">
+                                            <div class="box">
+                                                <h3>云空间年卡 50G
+                                                    <span>49元</span>
+                                                </h3>
+                                                <p class="desc">主商品签收后，自动激活至下单帐号</p>
+                                                <div class="agreement-box">
+                                                    <i class="icon-checkbox">
+                                                        <em>√</em>
+                                                    </i>
+                                                    我已阅读
+                                                    <a href="">
+                                                        注意事项
+                                                        <span>|</span>
+                                                    </a>
+                                                    <a href="">常见问题</a>
+                                                </div>
+                                                <div class="price">
+                                                    49元
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <i class="icon-checkbox">
+                                                <em>√</em>
+                                            </i>
+                                            <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1600176481.06844959.png" alt="">
+                                            <div class="box">
+                                                <h3>云空间月卡200G
+                                                    <span>已省18元</span>
+                                                </h3>
+                                                <p class="desc">主商品签收后，自动激活至下单帐号</p>
+                                                <div class="agreement-box">
+                                                    <i class="icon-checkbox">
+                                                        <em>√</em>
+                                                    </i>
+                                                    我已阅读
+                                                    <a href="">
+                                                        注意事项
+                                                        <span>|</span>
+                                                    </a>
+                                                    <a href="">常见问题</a>
+                                                </div>
+                                                <div class="price">
+                                                    1元
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <i class="icon-checkbox">
+                                                <em>√</em>
+                                            </i>
+                                            <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1600176481.06844959.png" alt="">
+                                            <div class="box">
+                                                <h3>云空间月卡 50G
+                                                    <span>6元</span>
+                                                </h3>
+                                                <p class="desc">主商品签收后，自动激活至下单帐号</p>
+                                                <div class="agreement-box">
+                                                    <i class="icon-checkbox">
+                                                        <em>√</em>
+                                                    </i>
+                                                    我已阅读
+                                                    <a href="">
+                                                        注意事项
+                                                        <span>|</span>
+                                                    </a>
+                                                    <a href="">常见问题</a>
+                                                </div>
+                                                <div class="price">
+                                                    6元
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="selected-list">
+                                <div class="model">
+                                    <em class="model-phone">小米11 8GB+128GB 黑色</em>
+                                    <span class="price">3999元</span>
+                                </div>
+                                <div class="total-price">总计：3999元</div>
+                            </div>
+                            <div class="btn-box">
+                                <div class="sale-btn">
+                                    <a href="" class="btn btn-primary">加入购物车</a>
+                                </div>
+                                <div class="favorite-btn">
+                                    <a href="" class="btn-gray btn-like">
+                                        <span class="
+                                        glyphicon glyphicon-heart"></span>
+                                        喜欢
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="after-sale-info">
+                                <span>
+                                    <i>
+                                        √
+                                    </i>
+                                    <em>小米自营</em>
+                                </span>
+                                <span>
+                                    <i>
+                                        √
+                                    </i>
+                                    <em>小米发货</em>
+                                </span>
+                                <span>
+                                    <i>
+                                        √
+                                    </i>
+                                    <em>7天无理由退货</em>
+                                </span>
+                                <span>
+                                    <i>
+                                        √
+                                    </i>
+                                    <em>运费说明</em>
+                                </span>
+                                <span>
+                                    <i>
+                                        √
+                                    </i>
+                                    <em>企业信息</em>
+                                </span>
+                                <span>
+                                    <i>
+                                        √
+                                    </i>
+                                    <em>企业信息</em>
+                                </span>
+                                <span>
+                                    <i>
+                                        √
+                                    </i>
+                                    <em>7天价格保护</em>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="site-footer">
+            <div class="container">
+                <div class="footer-service">
+                    <ul class="list-service clearfix">
+                        <li>
+                            <a href="">
+                                <i class="iconfont icon-weixiu"></i>
+                                预约维修服务
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="iconfont icon-tian"></i>
+                                7天无理由退货
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="iconfont icon-tian1"></i>
+                                15天免费换货
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="glyphicon glyphicon-gift"></i>
+                                满99元包邮
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="glyphicon glyphicon-map-marker"></i>
+                                520余家售后网点
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-links clearfix">
+                    <div class="col-links col-links-first">
+                        <p>帮助中心</p>
+                        <p>
+                            <a href="">账户管理</a>
+                        </p>
+                        <p>
+                            <a href="">购物指南</a>
+                        </p>
+                        <p>
+                            <a href="">订单操作</a>
+                        </p>
+                    </div>
+                    <div class="col-links">
+                        <p>服务支持</p>
+                        <p>
+                            <a href="">售后政策</a>
+                        </p>
+                        <p>
+                            <a href="">自助服务</a>
+                        </p>
+                        <p>
+                            <a href="">相关下载</a>
+                        </p>
+                    </div>
+                    <div class="col-links">
+                        <p>线下门店</p>
+                        <p>
+                            <a href="">小米之家</a>
+                        </p>
+                        <p>
+                            <a href="">服务网点</a>
+                        </p>
+                        <p>
+                            <a href="">授权体验店</a>
+                        </p>
+                    </div>
+                    <div class="col-links">
+                        <p>关于小米</p>
+                        <p>
+                            <a href="">了解小米</a>
+                        </p>
+                        <p>
+                            <a href="">加入小米</a>
+                        </p>
+                        <p>
+                            <a href="">投资者关系</a>
+                        </p>
+                        <p>
+                            <a href="">企业社会责任</a>
+                        </p>
+                        <p>
+                            <a href="">廉洁举报</a>
+                        </p>
+                    </div>
+                    <div class="col-links">
+                        <p>关注我们</p>
+                        <p>
+                            <a href="">新浪微博</a>
+                        </p>
+                        <p>
+                            <a href="">官方微信</a>
+                        </p>
+                        <p>
+                            <a href="">联系我们</a>
+                        </p>
+                        <p>
+                            <a href="">公益基金会</a>
+                        </p>
+                    </div>
+                    <div class="col-links">
+                        <p>特色服务</p>
+                        <p>
+                            <a href="">F 码通道</a>
+                        </p>
+                        <p>
+                            <a href="">礼物码</a>
+                        </p>
+                        <p>
+                            <a href="">防伪查询</a>
+                        </p>
+                    </div>
+                    <div class="col-contact">
+                        <p class="phone">400-100-5678</p>
+                        <p>8:00-18:00（仅收市话费）</p>
+                        <a href="" class="btn-line-primary">
+                            <i class="glyphicon glyphicon-comment"></i>
+                            人工客服</a>
+                        <div class="follow">
+                            关注小米：
+                            <a href="" class="wb"></a>
+                            <a href="" class="wx"></a>
+                            <img data-original="../img/wx-img.png" alt="" class="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-info">
+            <div class="container">
+                <div class="logo ir">小米官网</div>
+                <div class="info-text">
+                    <p class="sites">
+                        <a href="">小米商城</a>
+                        <span class="sep">|</span>
+                        <a href="">MIUI</a>
+                        <span class="sep">|</span>
+                        <a href="">米家</a>
+                        <span class="sep">|</span>
+                        <a href="">米聊</a>
+                        <span class="sep">|</span>
+                        <a href="">多看</a>
+                        <span class="sep">|</span>
+                        <a href="">游戏</a>
+                        <span class="sep">|</span>
+                        <a href="">政企服务</a>
+                        <span class="sep">|</span>
+                        <a href="">小米天猫店</a>
+                        <span class="sep">|</span>
+                        <a href="">小米集团隐私政策</a>
+                        <span class="sep">|</span>
+                        <a href="">小米公司儿童信息保护规则</a>
+                        <span class="sep">|</span>
+                        <a href="">小米商城隐私政策</a>
+                        <span class="sep">|</span>
+                        <a href="">小米商城用户协议</a>
+                        <span class="sep">|</span>
+                        <a href="">问题反馈</a>
+                        <span class="sep">|</span>
+                        <a href="">Select Location</a>
+                    </p>
+                    <p class="sites">
+                        <a href="">北京互联网法院法律服务工作站</a>
+                        <span class="sep">|</span>
+                        <a href="">中国消费者协会</a>
+                        <span class="sep">|</span>
+                        <a href="">北京市消费者协会</a>
+                    </p>
+                    <p>
+                        ©
+                        <a href="">mi.com</a>
+                        京ICP证110507号
+                        <a href="">京ICP备10046444号</a>
+                        <a href="">京公网安备11010802020134号</a>
+                        <a href="">京网文[2020]0276-042号</a>
+                        <br>
+                        <a href="">（京）网械平台备字（2018）第00005号</a>
+                        <a href="">互联网药品信息服务资格证 (京)-非经营性-2014-0090</a>
+                        <a href="">营业执照</a>
+                        <a href="">医疗器械质量公告</a>
+                        <br>
+                        <a href="">增值电信业务许可证</a>
+                        网络食品经营备案 京食药网食备202010048
+                        <a href="">食品经营许可证</a>
+                        <br>
+                        违法和不良信息举报电话：171-5104-4404
+                        <a href="">知识产权侵权投诉</a>
+                        本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+
+                    </p>
+                </div>
+                <div class="info-links">
+                    <a href="">
+                        <img data-original="../img/truste.png" alt="" class="lazy">
+                    </a>
+                    <a href="">
+                        <img data-original="../img/v-logo-2.png" alt="" class="lazy">
+                    </a>
+                    <a href="">
+                        <img data-original="../img/v-logo-1.png" alt="" class="lazy">
+                    </a>
+                    <a href="">
+                        <img data-original="../img/ba10428a4f9495ac310fd0b5e0cf8370.png" alt="" class="lazy">
+                    </a>
+                    <a href="" class="safe-auth">
+                        <img data-original="../img/143天.png" alt="" class="img1 lazy">
+                        <img data-original="../img/网站安全.png" alt="" class="lazy">
+                    </a>
+                </div>
+            </div>
+            <div class="slogan ir">探索黑科技，小米为发烧而生</div>
+        </div>
+    </div>
+</body>
+
+</html>
