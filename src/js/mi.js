@@ -58,22 +58,19 @@ $(function () {
     })
 });
 
-$(function () {
-    $("img.lazy").lazyload({ effect: "fadeIn" });
-});
-
 
 $.ajax({
     type: "get",
     url: "../../interface/getDate.php",
     dataType: "json",
     success: function (res) {
+        // console.log(res)
         let temp = '';
         res.forEach((elm, i) => {
             let picture = JSON.parse(elm.picture);
             // console.log(picture);
             temp += `<li class="brick-item brick-item-m-2">
-            <a href="">
+            <a href="./shop.html?id=${elm.id}">
                 <div class="figure figure-img">
                     <img src="../${picture[0].src}" alt="" class="lazy">
                 </div>
@@ -87,3 +84,24 @@ $.ajax({
         $('.p-list').append(temp);
     }
 });
+$(function () {
+    $("img.lazy").lazyload({ effect: "fadeIn" });
+});
+
+
+$(function(){
+        let timer=setInterval(function(){
+            let futuer=new Date(new Date(new Date().toLocaleDateString()).getTime()+24*60*60*1000-1);
+            let now=new Date(new Date().getTime());
+            let num=parseInt((futuer-now)/1000);
+            let s=num%60;
+            s=s<10?'0'+s:s;
+            let m=parseInt((num/60))%60;
+            m=m<10?'0'+m:m;
+            let h=parseInt(((num/60)/60))%24;
+            h=h<10?'0'+h:h;
+            $('#hour').text(h);
+            $('#minute').text(m);
+            $('#second').text(s);
+        });
+    })

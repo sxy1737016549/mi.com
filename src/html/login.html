@@ -1,84 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/login.css">
-</head>
+    <link rel="stylesheet" href="../css/login.css" />
 
-<body>
-    <div class="wrapper">
-        <div class="h_panel">
-            <div class="h_logo">
-                <a href="">小米网</a>
-            </div>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <div class="h_panel">
+        <div class="h_logo">
+          <a href="#">小米网</a>
         </div>
-        <div class="login_banner_panel">
-            <a href="">小米网</a>
-        </div>
-        <div class="layout_panel">
-            <div class="layout">
-                <div class="nav_tabs_panel">
-                    <a href="" class="navtab-link now">帐号登录</a>
-                    <span class="line"></span>
-                    <a href="" class="navtab-link">扫码登录</a>
-                </div>
-                <div class="login_user">
-                    <input type="text" name="user" id="username" placeholder="邮箱/手机号码/小米ID" class="item_account">
-                </div>
-                <div class="pwd_panel">
-                    <input type="password" name="password" id="pwd" placeholder="密码" class="item_account">
-                </div>
-                <div class="btns_bg">
-                    <input type="button" value="登录"  class="btnadpt">
-                </div>
-                <div class="other_panel">
-                    <div class="sms_link">
-                        <a href="" class="btnadpt btn_gray login_type_link">手机短信登录/注册</a>
-                    </div>
-                    <div class="reverse">
-                        <a href="">立即注册</a>
-                        <span>|</span>
-                        <a href="">忘记密码？</a>
-                    </div>
-                </div>
-                <div class="other_login_type">
-                    <div class="oth_type_links">
-                        <a href="" class="qq">
-                            <i></i>
-                        </a>
-                        <a href="" class="wb">
-                            <i></i>
-                        </a>
-                        <a href="" class="zfb">
-                            <i></i>
-                        </a>
-                        <a href="" class="wx">
-                            <i></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    <div class="n-footer">
-        <div class="nf-link-area">
-            <a href="">简体</a>
-            <span>|</span>
-            <a href="">繁体</a>
-            <span>|</span>
-            <a href="">English</a>
-            <span>|</span>
-            <a href="">常见问题</a>
-            <span>|</span>
-            <a href="">隐私政策</a>
+    <!-- main -->
+    <div class="main">
+      <a href="./index.html"> </a>
+      <!-- 登录表 -->
+      <form action="../../interface/login.php" method="POST" >
+        <div class="main-content">
+          <!-- 登录头 -->
+          <div class="nav-header">
+            <a href="#">帐号登录</a><span class="line"></span>
+            <a href="#">扫码登录</a>
+          </div>
+          <!-- 登录主体 -->
+          <div class="nav-main">
+            <!-- 登录名 -->
+            <div class="login-name log-in">
+              <input type="text" name="username" placeholder="邮箱/手机号码/小米ID" />
+            </div>
+            <!-- 登录密码 -->
+            <div class="login-pwd log-in">
+              <input type="password" name="password" placeholder="密码" />
+            </div>
+            <!-- 登录按键 -->
+            <div class="btns_bg">
+              <input
+                class="btnadpt"
+                id="login-button"
+                type="submit"
+                value="登录"
+              />
+            </div>
+            <!-- 手机登陆注册 -->
+            <div class="phone-login">
+              <a href="./register.html">手机短信登录/注册</a>
+            </div>
+            <!-- 注册 忘记密码 -->
+            <div class="forget">
+              <a class="outer-link" href="#">立即注册</a><span>|</span>
+              <a class="outer-link" href="#">忘记密码？</a>
+            </div>
+            <!-- 其他登陆方式 -->
+            <div class="other">
+              <a href="#" style="background-color: #0288d1">
+                <span style="background-position: -19px 0"></span>
+              </a>
+              <a href="#" style="background-color: #d32f2f">
+                <span style="background-position: -38px 0"></span>
+              </a>
+              <a href="#" style="background-color: #0ae">
+                <span style="background-position: -59px 0"></span>
+              </a>
+              <a href="#" style="background-color: #00d20d">
+                <span style="background-position: -83px 0; width: 24px"></span>
+              </a>
+            </div>
+          </div>
         </div>
-        <p class="nf-intro">小米公司版权所有-京ICP备10046444-<a href="">
-            <span><img src="https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png" alt=""></span>京公网安备11010802020134号
-        </a>-京ICP证110507号</p>
+      </form>
     </div>
-</body>
+    <!-- footer -->
+    <div class="footer">
+      <div class="nf-link-area ">
+        <ul class="lang-select-list">
+          <li>
+            <a
+              href="#"
 
+              >简体</a
+            >|
+          </li>
+          <li>
+            <a
+              href="#"
+              >繁体</a
+            >|
+          </li>
+          <li>
+            <a
+              href="#"
+
+              >English</a
+            >|
+          </li>
+          <li>
+            <a href="#" 
+              >常见问题</a
+            >|
+          </li>
+          <li>
+            <a id="#" href="/about/protocol/privacy" 
+              >隐私政策</a
+            >
+          </li>
+        </ul>
+      </div>
+      <p class="nf-intro">
+        小米公司版权所有-京ICP备10046444-<a
+
+          href="#"
+          ><span
+            ><img
+              src="https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png" /></span
+          >京公网安备11010802020134号</a
+        >-京ICP证110507号
+      </p>
+    </div>
+  </body>
 </html>

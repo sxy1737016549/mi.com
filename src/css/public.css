@@ -1,0 +1,27 @@
+@charset 'utf-8';
+* {
+  margin: 0 ;
+  padding: 0 ;
+}
+b,
+i,
+em,
+strong {
+  font-weight: normal;
+  font-style: normal;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+  color: #333;
+  min-width: 1226px;
+}
+a {
+  text-decoration: none !important;
+}
+.wrapper {
+  width: 1226px;
+  margin: 0 auto;
+}
